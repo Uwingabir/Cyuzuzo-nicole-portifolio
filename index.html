@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+================================================
+LEADERSHIP PORTFOLIO - CYUZUZO NICOLE
+================================================
 
+📋 QUICK SETUP INSTRUCTIONS:
+
+📷 Profile Picture:
+   - Your profile picture is already set up as 'profile-picture.jpg'
+   - Image displays in JPG format in a professional circular frame
+   - Perfect size and format for your leadership portfolio
+
+🔗 LinkedIn Profile:
+   - Line 51: Update LinkedIn URL (navigation)
+   - Line 67: Update LinkedIn URL (hero section)
+   - Line 96: Update LinkedIn URL (about section)
+   - Line 617: Update LinkedIn URL (contact section)
+
+📄 Professional Artifacts Links:
+   - Line 407: Artifact 1 - Sales Performance Analysis (YouTube)
+   - Line 431: Artifact 2 - Community Development Project (YouTube)
+
+📝 Leadership Reflection Essay:
+   - Line 503: Update reflection document link
+   
+   Replace "https://your-reflection-document-link.com" with your actual reflection document URL.
+   This could be a Google Drive link, PDF hosting service, or any accessible document link.
+
+💡 Current Artifact Links:
+   1. Artifact 1: https://www.youtube.com/watch?v=my9giu2WLQ4
+   2. Artifact 2: https://www.youtube.com/watch?v=gpGF4gMhRe4
+
+================================================
+-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Portfolio - Cyuzuzo Nicole</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -26,6 +58,12 @@
                 <li><a href="#reflection" class="nav-link">Reflection</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="https://linkedin.com/in/cyuzuzo-nicole" class="linkedin-btn" target="_blank" title="Visit LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -39,27 +77,25 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="profile-image-container">
-                    <div class="profile-image-placeholder" id="profileImagePlaceholder">
-                        <i class="fas fa-user"></i>
-                        <div class="upload-overlay">
-                            <i class="fas fa-camera"></i>
-                            <span>Upload Photo</span>
-                        </div>
-                    </div>
-                    <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
-                    <img id="profileImage" src="" alt="Profile Picture" style="display: none;">
+                    <!-- Your professional profile picture -->
+                    <img src="profile-picture.jpg" alt="Nicole CYUZUZO - Leadership Portfolio" class="profile-image" 
+                         onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b586?w=400&h=400&fit=crop&crop=face&auto=format&q=80'">
                 </div>
                 <h1 class="hero-title">Leadership Portfolio</h1>
                 <h2 class="hero-subtitle">Cyuzuzo Nicole</h2>
                 <p class="hero-description">
-                    Passionate leader dedicated to driving innovation and fostering collaborative excellence
+                    Passionate leader dedicated to driving innovation and fostering collaborative excellence 
                     in entrepreneurial ventures and organizational development.
                 </p>
                 <div class="hero-buttons">
                     <a href="#resume" class="btn btn-primary">View Resume</a>
                     <a href="#reflection" class="btn btn-primary">
-                        <i class="fas fa-pen"></i> View Reflection
-                    
+                        <i class="fas fa-pen"></i> Read Reflection
+                    </a>
+                    <a href="https://linkedin.com/in/cyuzuzo-nicole" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -71,22 +107,17 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        As an emerging leader in entrepreneurship and innovation, I am committed to
-                        creating meaningful impact through strategic thinking, collaborative leadership,
-                        and sustainable business practices. My journey encompasses diverse experiences
+                        As an emerging leader in entrepreneurship and innovation, I am committed to 
+                        creating meaningful impact through strategic thinking, collaborative leadership, 
+                        and sustainable business practices. My journey encompasses diverse experiences 
                         that have shaped my understanding of effective leadership in today's dynamic environment.
                     </p>
-                    <div class="linkedin-update">
-                        <h3>LinkedIn Profile</h3>
-                        <div class="linkedin-placeholder">
-                            <i class="fab fa-linkedin"></i>
-                            <div class="linkedin-content">
-                                <p><strong>Update your LinkedIn profile link here:</strong></p>
-                                <input type="url" id="linkedinUrl" placeholder="https://linkedin.com/in/your-profile"
-                                    class="linkedin-input">
-                                <button onclick="updateLinkedIn()" class="btn btn-small">Update LinkedIn</button>
-                            </div>
-                        </div>
+                    <div class="linkedin-display">
+                        <h3><i class="fab fa-linkedin"></i> Professional Network</h3>
+                        <p>Connect with me on LinkedIn to explore my professional journey and network.</p>
+                        <a href="https://linkedin.com/in/cyuzuzo-nicole" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-linkedin"></i> Visit LinkedIn Profile
+                        </a>
                     </div>
                 </div>
             </div>
@@ -101,36 +132,28 @@
                 <!-- Resume Header -->
                 <div class="resume-header">
                     <div class="resume-header-content">
-                        <h1 class="resume-name" contenteditable="true" id="resumeName">Nicole CYUZUZO</h1>
-                        <div class="resume-contact" contenteditable="true" id="resumeContact">
-                            Email: cyuzuzonicole21@gmail.com | Phone: +250 788269782/+250791575330 | Location:
-                            Gitega-Nyarugenge, Kigali City, Rwanda
+                        <h1 class="resume-name">Nicole CYUZUZO</h1>
+                        <div class="resume-contact">
+                            Email: cyuzuzonicole21@gmail.com | Phone: +250 788269782/+250791575330 | Location: Gitega-Nyarugenge, Kigali City, Rwanda
                         </div>
-                        <div class="resume-links" contenteditable="true" id="resumeLinks">
+                        <div class="resume-links">
                             Age: 24 years | Portfolio: Leadership Portfolio Website
                         </div>
                     </div>
-                    <button onclick="toggleEditMode()" class="edit-toggle-btn" id="editToggleBtn">
-                        <i class="fas fa-edit"></i> Edit Resume
-                    </button>
                 </div>
 
                 <!-- Professional Summary -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">Professional Summary</h3>
-                    <div class="resume-section-content" contenteditable="true" id="professionalSummary">
-                        Dynamic and results-oriented entrepreneur with extensive experience in customer service, sales
-                        management, and community development. Proven track record in business development, customer
-                        relationship management, and team leadership. Passionate about creating sustainable solutions
-                        that drive organizational growth and community impact through innovative approaches and
-                        collaborative leadership.
+                    <div class="resume-section-content">
+                        Dynamic and results-oriented entrepreneur with extensive experience in customer service, sales management, and community development. Proven track record in business development, customer relationship management, and team leadership. Passionate about creating sustainable solutions that drive organizational growth and community impact through innovative approaches and collaborative leadership.
                     </div>
                 </div>
 
                 <!-- Education -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">Education</h3>
-                    <div class="resume-section-content" contenteditable="true" id="education">
+                    <div class="resume-section-content">
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Bachelor of Science (BSc.) in Entrepreneurial Leadership</h4>
@@ -139,12 +162,10 @@
                             <div class="resume-item-details">
                                 African Leadership University, Kigali, Rwanda<br>
                                 Expected Graduation: December 2025<br>
-                                Relevant Courses: Professional Skills, Introduction to Global Challenges and
-                                Opportunities, Complex Problem Solving, Building a Start-up, Creating Employment in
-                                Emerging Markets
+                                Relevant Courses: Professional Skills, Introduction to Global Challenges and Opportunities, Complex Problem Solving, Building a Start-up, Creating Employment in Emerging Markets
                             </div>
                         </div>
-
+                        
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>O-Level Certificate</h4>
@@ -170,7 +191,7 @@
                 <!-- Professional Experience -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">Professional Experience</h3>
-                    <div class="resume-section-content" contenteditable="true" id="professionalExperience">
+                    <div class="resume-section-content">
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Sales and Tender Manager</h4>
@@ -183,7 +204,7 @@
                                 • Enhanced overall sales performance and client relationship management
                             </div>
                         </div>
-
+                        
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Assistant Sales Manager</h4>
@@ -228,7 +249,7 @@
                 <!-- Leadership Experience -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">Leadership Experience</h3>
-                    <div class="resume-section-content" contenteditable="true" id="leadershipExperience">
+                    <div class="resume-section-content">
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>English Ambassador - English Development Club</h4>
@@ -242,7 +263,7 @@
                                 • Achieved significant improvement in student communication skills
                             </div>
                         </div>
-
+                        
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Team Coordinator - Tikkun Olam (Community Services)</h4>
@@ -251,10 +272,8 @@
                             <div class="resume-item-details">
                                 The Agahozo-Shalom Youth Village, Rwamagana, Rwanda<br>
                                 • Coordinated and represented 20 girls in family leadership structure<br>
-                                • Organized local fundraising opportunities for three vulnerable families in Rubona
-                                sector<br>
-                                • Secured medical insurance, school fees, uniforms, and books for nine vulnerable
-                                children<br>
+                                • Organized local fundraising opportunities for three vulnerable families in Rubona sector<br>
+                                • Secured medical insurance, school fees, uniforms, and books for nine vulnerable children<br>
                                 • Built strong community partnerships for sustainable support systems
                             </div>
                         </div>
@@ -277,7 +296,7 @@
                 <!-- Volunteering Experience -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">Volunteering Experience</h3>
-                    <div class="resume-section-content" contenteditable="true" id="volunteeringExperience">
+                    <div class="resume-section-content">
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Trainer - Genesis of Creativity</h4>
@@ -291,7 +310,7 @@
                                 • Organized seven quarterly grade competitions
                             </div>
                         </div>
-
+                        
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Modern Kitchen Coordinator</h4>
@@ -299,11 +318,9 @@
                             </div>
                             <div class="resume-item-details">
                                 The Agahozo-Shalom Youth Village, Rwamagana, Rwanda<br>
-                                • Created liaison between local authorities and families in communities to combat
-                                malnutrition<br>
+                                • Created liaison between local authorities and families in communities to combat malnutrition<br>
                                 • Organized holiday camp with students in the Gitega sector<br>
-                                • Coordinated creation of kitchen gardens for five families demonstrating high risks of
-                                malnutrition<br>
+                                • Coordinated creation of kitchen gardens for five families demonstrating high risks of malnutrition<br>
                                 • Implemented sustainable nutrition improvement programs
                             </div>
                         </div>
@@ -313,7 +330,7 @@
                 <!-- Skills -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">Core Competencies</h3>
-                    <div class="resume-section-content" contenteditable="true" id="skills">
+                    <div class="resume-section-content">
                         <div class="skills-grid">
                             <div class="skill-category">
                                 <h5>Computer Skills</h5>
@@ -358,7 +375,7 @@
                 <!-- References -->
                 <div class="resume-section">
                     <h3 class="resume-section-title">References</h3>
-                    <div class="resume-section-content" contenteditable="true" id="references">
+                    <div class="resume-section-content">
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>Jean Marie Vianney SIKUBWABO</h4>
@@ -369,7 +386,7 @@
                                 Email: sissasikubwabo@gmail.com
                             </div>
                         </div>
-
+                        
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>David NDAGIJIMANA</h4>
@@ -383,12 +400,9 @@
                     </div>
                 </div>
 
-                <!-- Save Resume Button -->
+                <!-- Print Resume Button -->
                 <div class="resume-actions">
-                    <button onclick="saveResume()" class="btn btn-primary">
-                        <i class="fas fa-save"></i> Save Resume
-                    </button>
-                    <button onclick="printResume()" class="btn btn-secondary">
+                    <button onclick="window.print()" class="btn btn-secondary">
                         <i class="fas fa-print"></i> Print Resume
                     </button>
                 </div>
@@ -401,93 +415,43 @@
         <div class="container">
             <h2 class="section-title">Professional Artifacts</h2>
             <p class="section-description">
-                Upload three artifacts from your previous work/project deliverables
-                (reports, project plans, research papers, budgets, field visit records, etc.)
+                Two key artifacts showcasing professional work and project deliverables
             </p>
             <div class="artifacts-grid">
                 <div class="artifact-card">
                     <div class="artifact-header">
-                        <h3>Artifact 1</h3>
+                        <h3>Sales Performance Analysis</h3>
                         <div class="artifact-icon">
-                            <i class="fas fa-file-alt"></i>
+                            <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                     <div class="artifact-content">
-                        <input type="text" placeholder="Artifact Title" class="artifact-title-input"
-                            id="artifact1Title">
-                        <textarea placeholder="Brief description of this artifact..." class="artifact-description"
-                            id="artifact1Description"></textarea>
-                        <input type="file" id="artifact1Input" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx"
-                            style="display: none;">
-                        <button onclick="document.getElementById('artifact1Input').click()" class="btn btn-secondary">
-                            <i class="fas fa-upload"></i> Upload File
-                        </button>
-                        <div id="artifact1Preview" class="file-preview" style="display: none;">
-                            <div class="file-info">
-                                <i class="fas fa-file"></i>
-                                <span id="artifact1FileName"></span>
-                                <a id="artifact1Download" href="#" download class="download-link">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
+                        <div class="artifact-description">
+                            Comprehensive analysis of sales performance improvements implemented during my tenure as Sales and Tender Manager at ICN Ltd, including customer retention strategies and bidding process optimizations.
+                        </div>
+                        <div class="artifact-actions">
+                            <a href="https://www.youtube.com/watch?v=my9giu2WLQ4" class="artifact-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Artifact
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="artifact-card">
                     <div class="artifact-header">
-                        <h3>Artifact 2</h3>
+                        <h3>Community Development Project</h3>
                         <div class="artifact-icon">
-                            <i class="fas fa-file-alt"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                     </div>
                     <div class="artifact-content">
-                        <input type="text" placeholder="Artifact Title" class="artifact-title-input"
-                            id="artifact2Title">
-                        <textarea placeholder="Brief description of this artifact..." class="artifact-description"
-                            id="artifact2Description"></textarea>
-                        <input type="file" id="artifact2Input" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx"
-                            style="display: none;">
-                        <button onclick="document.getElementById('artifact2Input').click()" class="btn btn-secondary">
-                            <i class="fas fa-upload"></i> Upload File
-                        </button>
-                        <div id="artifact2Preview" class="file-preview" style="display: none;">
-                            <div class="file-info">
-                                <i class="fas fa-file"></i>
-                                <span id="artifact2FileName"></span>
-                                <a id="artifact2Download" href="#" download class="download-link">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
+                        <div class="artifact-description">
+                            Documentation of the Tikkun Olam community service program, including fundraising strategies, partnerships with local authorities, and impact assessment for vulnerable families in the Rubona sector.
                         </div>
-                    </div>
-                </div>
-
-                <div class="artifact-card">
-                    <div class="artifact-header">
-                        <h3>Artifact 3</h3>
-                        <div class="artifact-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                    </div>
-                    <div class="artifact-content">
-                        <input type="text" placeholder="Artifact Title" class="artifact-title-input"
-                            id="artifact3Title">
-                        <textarea placeholder="Brief description of this artifact..." class="artifact-description"
-                            id="artifact3Description"></textarea>
-                        <input type="file" id="artifact3Input" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx"
-                            style="display: none;">
-                        <button onclick="document.getElementById('artifact3Input').click()" class="btn btn-secondary">
-                            <i class="fas fa-upload"></i> Upload File
-                        </button>
-                        <div id="artifact3Preview" class="file-preview" style="display: none;">
-                            <div class="file-info">
-                                <i class="fas fa-file"></i>
-                                <span id="artifact3FileName"></span>
-                                <a id="artifact3Download" href="#" download class="download-link">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
+                        <div class="artifact-actions">
+                            <a href="https://www.youtube.com/watch?v=gpGF4gMhRe4" class="artifact-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Artifact
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -500,88 +464,53 @@
         <div class="container">
             <h2 class="section-title">Leadership Timeline</h2>
             <p class="section-description">
-                Five major events in your entrepreneurial leadership journey
+                Five major events in my entrepreneurial leadership journey
             </p>
             <div class="timeline-container">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">
-                            <input type="text" placeholder="Year/Date" class="timeline-date-input" id="timeline1Date">
-                        </div>
-                        <h3>
-                            <input type="text" placeholder="Event Title" class="timeline-title-input"
-                                id="timeline1Title">
-                        </h3>
-                        <textarea placeholder="Describe this major leadership event and its impact..."
-                            class="timeline-description" id="timeline1Description"></textarea>
+                        <div class="timeline-date">2024</div>
+                        <h3>Sales and Tender Manager Role</h3>
+                        <p>Appointed as Sales and Tender Manager at ICN Ltd, leading sales performance improvements and coordinating complex bidding processes. Successfully enhanced customer retention and satisfaction through innovative tracking systems.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">
-                            <input type="text" placeholder="Year/Date" class="timeline-date-input" id="timeline2Date">
-                        </div>
-                        <h3>
-                            <input type="text" placeholder="Event Title" class="timeline-title-input"
-                                id="timeline2Title">
-                        </h3>
-                        <textarea placeholder="Describe this major leadership event and its impact..."
-                            class="timeline-description" id="timeline2Description"></textarea>
+                        <div class="timeline-date">2023</div>
+                        <h3>Started Entrepreneurial Leadership Degree</h3>
+                        <p>Began Bachelor of Science in Entrepreneurial Leadership at African Leadership University, focusing on complex problem solving, startup development, and creating employment opportunities in emerging markets.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">
-                            <input type="text" placeholder="Year/Date" class="timeline-date-input" id="timeline3Date">
-                        </div>
-                        <h3>
-                            <input type="text" placeholder="Event Title" class="timeline-title-input"
-                                id="timeline3Title">
-                        </h3>
-                        <textarea placeholder="Describe this major leadership event and its impact..."
-                            class="timeline-description" id="timeline3Description"></textarea>
+                        <div class="timeline-date">2019-2022</div>
+                        <h3>English Ambassador Leadership</h3>
+                        <p>Led the English Development Club as an ambassador, transforming learning outcomes for 40 low-performing students through innovative peer-to-peer learning methods and confidence-building strategies.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">
-                            <input type="text" placeholder="Year/Date" class="timeline-date-input" id="timeline4Date">
-                        </div>
-                        <h3>
-                            <input type="text" placeholder="Event Title" class="timeline-title-input"
-                                id="timeline4Title">
-                        </h3>
-                        <textarea placeholder="Describe this major leadership event and its impact..."
-                            class="timeline-description" id="timeline4Description"></textarea>
+                        <div class="timeline-date">2019-2021</div>
+                        <h3>Community Service Coordination</h3>
+                        <p>Coordinated Tikkun Olam community service program, successfully securing medical insurance, school fees, and basic necessities for nine vulnerable children while building sustainable community partnerships.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">
-                            <input type="text" placeholder="Year/Date" class="timeline-date-input" id="timeline5Date">
-                        </div>
-                        <h3>
-                            <input type="text" placeholder="Event Title" class="timeline-title-input"
-                                id="timeline5Title">
-                        </h3>
-                        <textarea placeholder="Describe this major leadership event and its impact..."
-                            class="timeline-description" id="timeline5Description"></textarea>
+                        <div class="timeline-date">2018-2022</div>
+                        <h3>Sports Team Leadership & Training Excellence</h3>
+                        <p>Coordinated ASYV girls' sports team to two district trophies while simultaneously training 38 models and fashion designers in the Genesis of Creativity program, organizing multiple successful exhibitions and competitions.</p>
                     </div>
                 </div>
-            </div>
-            <div class="timeline-actions">
-                <button onclick="saveTimeline()" class="btn btn-primary">
-                    <i class="fas fa-save"></i> Save Timeline
-                </button>
             </div>
         </div>
     </section>
@@ -591,50 +520,24 @@
         <div class="container">
             <h2 class="section-title">Leadership Reflection Essay</h2>
             <p class="section-description">
-                Upload your Leadership Reflection Essay (500-1000 words) responding to:
-                What specific learning experiences transformed your leadership approach?
+                My transformative leadership journey exploring key experiences that shaped my approach
             </p>
-            <div class="reflection-upload-section">
-                <div class="reflection-upload-card">
-                    <div class="upload-icon">
+            <div class="reflection-card">
+                <div class="reflection-header">
+                    <h3>Transformative Leadership Journey: Learning Through Experience</h3>
+                    <div class="reflection-icon">
                         <i class="fas fa-pen-fancy"></i>
                     </div>
-                    <h3>Upload Your Leadership Reflection Essay</h3>
-                    <p>Upload your reflection essay document (PDF, DOC, or DOCX format recommended)</p>
-                    <input type="file" id="reflectionInput" accept=".pdf,.doc,.docx" style="display: none;">
-                    <button onclick="document.getElementById('reflectionInput').click()" class="btn btn-primary">
-                        <i class="fas fa-upload"></i> Choose Essay File
-                    </button>
-                    <div id="reflectionPreview" class="file-preview" style="display: none;">
-                        <div class="file-info">
-                            <i class="fas fa-file-pdf"></i>
-                            <span id="reflectionFileName"></span>
-                            <a id="reflectionDownload" href="#" download class="download-link">
-                                <i class="fas fa-download"></i> Download Essay
-                            </a>
-                        </div>
-                        <div class="reflection-details">
-                            <h4>Leadership Reflection Essay</h4>
-                            <p>Your uploaded reflection essay addresses the transformative learning experiences that
-                                shaped your leadership approach. This document is ready for academic review and
-                                portfolio evaluation.</p>
-                        </div>
-                    </div>
                 </div>
-
-                <!-- Optional: Essay Guidelines -->
-                <div class="essay-guidelines">
-                    <h4>Essay Guidelines</h4>
-                    <ul>
-                        <li><strong>Word Count:</strong> 500-1000 words</li>
-                        <li><strong>Format:</strong> PDF, DOC, or DOCX</li>
-                        <li><strong>Content Focus:</strong> Specific learning experiences that transformed your
-                            leadership approach</li>
-                        <li><strong>Structure:</strong> Include examples from your professional and volunteer
-                            experiences</li>
-                        <li><strong>Reflection:</strong> Discuss how these experiences shaped your current leadership
-                            style</li>
-                    </ul>
+                <div class="reflection-content">
+                    <div class="reflection-description">
+                        A comprehensive reflection essay exploring the transformative learning experiences that fundamentally shaped my leadership approach - from community service coordination to team management, examining how diverse challenges evolved my understanding from traditional command-and-control to servant leadership focused on empowerment and sustainable impact.
+                    </div>
+                    <div class="reflection-actions">
+                        <a href="Leadership Portfolio_CYUZUZO Nicole (1).docx" class="reflection-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Reflection
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -645,22 +548,45 @@
         <div class="container">
             <h2 class="section-title">Contact Information</h2>
             <div class="contact-content">
-                <div class="contact-form">
-                    <div class="contact-field">
-                        <label for="contactEmail">Email:</label>
-                        <input type="email" id="contactEmail" placeholder="your.email@example.com">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>cyuzuzonicole21@gmail.com</p>
+                        </div>
                     </div>
-                    <div class="contact-field">
-                        <label for="contactPhone">Phone:</label>
-                        <input type="tel" id="contactPhone" placeholder="+1 (555) 123-4567">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+250 788269782</p>
+                            <p>+250 791575330</p>
+                        </div>
                     </div>
-                    <div class="contact-field">
-                        <label for="contactLocation">Location:</label>
-                        <input type="text" id="contactLocation" placeholder="City, Country">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Gitega-Nyarugenge</p>
+                            <p>Kigali City, Rwanda</p>
+                        </div>
                     </div>
-                    <button onclick="saveContact()" class="btn btn-primary">
-                        <i class="fas fa-save"></i> Save Contact Info
-                    </button>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/cyuzuzo-nicole" target="_blank">Connect on LinkedIn</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -670,17 +596,10 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Cyuzuzo Nicole. All rights reserved.</p>
-            <p>Leadership Portfolio - Created for Academic Excellence</p>
+            <p>Leadership Portfolio - Professional Showcase</p>
         </div>
     </footer>
 
-    <!-- Floating Action Button for Reflection -->
-    <div class="floating-action-btn" onclick="scrollToReflection()">
-        <i class="fas fa-pen-fancy"></i>
-        <span class="fab-tooltip">View Reflection</span>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="showcase-script.js"></script>
 </body>
-
 </html>
